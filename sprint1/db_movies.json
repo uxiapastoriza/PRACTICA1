@@ -1,0 +1,26 @@
+[	
+	{ "titulo": "Los 7 magnificos",
+ 	"director": "Antoine Fuqua", 
+	"genero": "Aventura",
+	"ano": "2016", 
+	"pais": "USA"
+	},
+	{ "titulo": "Ozzy",
+	  "director": "Alberto Rodriguez",
+	  "genero": "Animacion",
+	  "ano": "2016",
+	  "pais": "España"
+	},
+	{ "titulo": "Astral",
+	  "director": "David Cabrera",
+	  "genero": "Documental",
+	  "ano": "2016",
+	  "pais": "España"
+	},
+	{ "titulo": "Inferno",
+	  "director": "David Koepp",
+	  "genero": "Thriller",
+	  "ano": "2016",
+	  "pais": "USA"
+	}
+]

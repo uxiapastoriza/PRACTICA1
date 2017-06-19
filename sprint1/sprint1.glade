@@ -203,7 +203,6 @@ Uxía Pastoriza Portela</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes">Ayuda</property>
                 <property name="use_underline">True</property>
-                <signal name="activate-item" handler="on_aboutdialog_activate" swapped="no"/>
                 <child type="submenu">
                   <object class="GtkMenu" id="menu4">
                     <property name="visible">True</property>
@@ -213,6 +212,7 @@ Uxía Pastoriza Portela</property>
                         <property name="label">gtk-about</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
+                        <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
                         <signal name="activate" handler="on_aboutdialog_activate" object="aboutdialog" swapped="no"/>
                       </object>
@@ -257,6 +257,7 @@ Uxía Pastoriza Portela</property>
                         <child>
                           <object class="GtkCellRendererText" id="cellrenderertext1">
                             <property name="editable">True</property>
+                            <signal name="edited" handler="on_edited_clicked" swapped="no"/>
                           </object>
                           <attributes>
                             <attribute name="text">0</attribute>
@@ -271,6 +272,7 @@ Uxía Pastoriza Portela</property>
                         <child>
                           <object class="GtkCellRendererText" id="cellrenderertext2">
                             <property name="editable">True</property>
+                            <signal name="edited" handler="on_edited_clicked" swapped="no"/>
                           </object>
                           <attributes>
                             <attribute name="text">1</attribute>
@@ -285,6 +287,7 @@ Uxía Pastoriza Portela</property>
                         <child>
                           <object class="GtkCellRendererText" id="cellrenderertext3">
                             <property name="editable">True</property>
+                            <signal name="edited" handler="on_edited_clicked" swapped="no"/>
                           </object>
                           <attributes>
                             <attribute name="text">2</attribute>
@@ -299,6 +302,7 @@ Uxía Pastoriza Portela</property>
                         <child>
                           <object class="GtkCellRendererText" id="cellrenderertext4">
                             <property name="editable">True</property>
+                            <signal name="edited" handler="on_edited_clicked" swapped="no"/>
                           </object>
                           <attributes>
                             <attribute name="text">3</attribute>
@@ -313,6 +317,7 @@ Uxía Pastoriza Portela</property>
                         <child>
                           <object class="GtkCellRendererText" id="cellrenderertext5">
                             <property name="editable">True</property>
+                            <signal name="edited" handler="on_edited_clicked" swapped="no"/>
                           </object>
                           <attributes>
                             <attribute name="text">4</attribute>
@@ -412,6 +417,7 @@ Uxía Pastoriza Portela</property>
                         <property name="can_focus">False</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
+                        <signal name="activate" handler="on_aboutdialog_activate" object="aboutdialog" swapped="no"/>
                       </object>
                     </child>
                   </object>
@@ -429,10 +435,11 @@ Uxía Pastoriza Portela</property>
           <object class="GtkLabel" id="label2">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
+            <property name="ypad">13</property>
             <property name="label" translatable="yes">Introduzca los datos de la nueva película</property>
           </object>
           <packing>
-            <property name="expand">True</property>
+            <property name="expand">False</property>
             <property name="fill">True</property>
             <property name="position">1</property>
           </packing>
@@ -550,7 +557,7 @@ Uxía Pastoriza Portela</property>
             </child>
           </object>
           <packing>
-            <property name="expand">True</property>
+            <property name="expand">False</property>
             <property name="fill">False</property>
             <property name="position">2</property>
           </packing>
@@ -571,7 +578,7 @@ Uxía Pastoriza Portela</property>
               </object>
               <packing>
                 <property name="expand">True</property>
-                <property name="fill">True</property>
+                <property name="fill">False</property>
                 <property name="position">0</property>
               </packing>
             </child>
@@ -587,14 +594,14 @@ Uxía Pastoriza Portela</property>
               </object>
               <packing>
                 <property name="expand">True</property>
-                <property name="fill">True</property>
+                <property name="fill">False</property>
                 <property name="position">1</property>
               </packing>
             </child>
           </object>
           <packing>
             <property name="expand">False</property>
-            <property name="fill">True</property>
+            <property name="fill">False</property>
             <property name="position">3</property>
           </packing>
         </child>
